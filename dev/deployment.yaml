@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-ci
+  labels:
+    help: go
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      help: go
+  template:
+    metadata:
+      labels:
+        help: go
+    spec:
+      containers:
+        - name: gogo
+          image: tanaxw/tanax:0.0.14
+          ports:
+            - containerPort: 3000
+              name: service-port
