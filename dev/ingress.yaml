@@ -6,7 +6,7 @@ spec:
   rules:
     - http:
         paths:
-          - path: /
+          - path: /go
             backend:
               service:
                 name: go-service

@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: gogo
-          image: tanaxw/tanax:0.0.14
+          image: tanaxw/tanax:0.0.2
           ports:
             - containerPort: 3000
               name: service-port
